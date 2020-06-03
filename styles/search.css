@@ -1,0 +1,33 @@
+#page-search-results {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+#page-search-results header{
+    margin-top: 48px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page-search-results header a{
+    color: var(--title-color);
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+}
+
+#page-search-results header a span {
+    margin-right: 16px;
+    background-image: url(../assets/arrow-left.svg);
+
+    display: flex;
+
+    width: 20px;
+    height: 25px;
+}
+

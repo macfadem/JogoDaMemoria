@@ -1,4 +1,5 @@
 const cards = document.querySelectorAll('.memory-card');
+const reload = document.getElementsByClassName('.button');
 
 let hasFlippedCard = false;
 let lockBoard = false;
@@ -63,3 +64,18 @@ shuffle()
 
 
 cards.forEach(card => card.addEventListener('click', flipCard));
+
+function resetEverything() {
+  lockBoard = true;
+
+  
+  cards.forEach(card => card.addEventListener('click', flipCard));
+  cards.forEach(card => card.classList.remove('flip'));
+  
+  setTimeout(() => {
+    shuffle();
+    resetBoard();
+  }, 500)
+  
+
+}

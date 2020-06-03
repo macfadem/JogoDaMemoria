@@ -1,76 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt_br">
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado da pesquisa</title>
 
-  <title>Memory Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="./styles.css">
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/search.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+
 </head>
 <body>
-    <header></header>
-    <section class="memory-game">
-        <div class="memory-card" data-object="baterias">
-          <img class="front-face" src="img/baterias.svg" alt="Baterias">
-          <img class="back-face" src="img/logo.svg" alt="Logo">
-        </div>
-      
-        <div class="memory-card" data-object="baterias">
-          <img class="front-face" src="img/baterias.svg" alt="Baterias">
-          <img class="back-face" src="img/logo.svg" alt="Logo">
-        </div>
-      
-        <div class="memory-card" data-object="eletronicos">
-          <img class="front-face" src="img/eletronicos.svg" alt="Eletrônicos">
-          <img class="back-face" src="img/logo.svg" alt="Logo">
-        </div>
-      
-        <div class="memory-card" data-object="eletronicos">
-          <img class="front-face" src="img/eletronicos.svg" alt="Eletrônicos">
-          <img class="back-face" src="img/logo.svg" alt="Logo">
-        </div>
-      
-        <div class="memory-card" data-object="lampadas">
-          <img class="front-face" src="img/lampadas.svg" alt="Lâmpadas">
-          <img class="back-face" src="img/logo.svg" alt="Logo">
-        </div>
-      
-        <div class="memory-card" data-object="lampadas">
-          <img class="front-face" src="img/lampadas.svg" alt="Lâmpadas">
-          <img class="back-face" src="img/logo.svg" alt="Logo">
-        </div>
-      
-        <div class="memory-card" data-object="oleo">
-          <img class="front-face" src="img/oleo.svg" alt="Óleo">
-          <img class="back-face" src="img/logo.svg" alt="Logo">
-        </div>
-      
-        <div class="memory-card" data-object="oleo">
-          <img class="front-face" src="img/oleo.svg" alt="Óleo">
-          <img class="back-face" src="img/logo.svg" alt="Logo">
-        </div>
-      
-        <div class="memory-card" data-object="organicos">
-          <img class="front-face" src="img/organicos.svg" alt="Orgânicos">
-          <img class="back-face" src="img/logo.svg" alt="Logo">
-        </div>
-      
-        <div class="memory-card" data-object="organicos">
-          <img class="front-face" src="img/organicos.svg" alt="Orgânicos">
-          <img class="back-face" src="img/logo.svg" alt="Logo">
-        </div>
-      
-        <div class="memory-card" data-object="papeis">
-          <img class="front-face" src="img/papeis-papelao.svg" alt="Papel">
-          <img class="back-face" src="img/logo.svg" alt="Logo">
-        </div>
-      
-        <div class="memory-card" data-object="papeis">
-          <img class="front-face" src="img/papeis-papelao.svg" alt="Papel">
-          <img class="back-face" src="img/logo.svg" alt="Logo">
-        </div>
-      </section>
 
-  <script src="./scripts.js"></script>
+    <div id="page-search-results">
+
+        
+            <header>
+                <img src="assets/logo.svg" alt="Logomarca">
+    
+                <a href="index.html">
+                    <span></span>
+                    Voltar para home
+                </a>
+            </header>
+
+            <main>
+
+                <aside>
+                    <div>
+                        <button onclick="resetEverything()">Jogar de novo</button>
+                    </div>
+                </aside>
+
+                <div class="cards">
+                    <div class="memory-card" data-object="baterias">
+                        <img class="front-face" src="img/baterias.svg" alt="Baterias">
+                        <img class="back-face" src="img/logo.svg" alt="Logo">
+                      </div>
+                    
+                      <div class="memory-card" data-object="baterias">
+                        <img class="front-face" src="img/baterias.svg" alt="Baterias">
+                        <img class="back-face" src="img/logo.svg" alt="Logo">
+                      </div>
+                    
+                      <div class="memory-card" data-object="eletronicos">
+                        <img class="front-face" src="img/eletronicos.svg" alt="Eletrônicos">
+                        <img class="back-face" src="img/logo.svg" alt="Logo">
+                      </div>
+                    
+                      <div class="memory-card" data-object="eletronicos">
+                        <img class="front-face" src="img/eletronicos.svg" alt="Eletrônicos">
+                        <img class="back-face" src="img/logo.svg" alt="Logo">
+                      </div>
+                    
+                      <div class="memory-card" data-object="lampadas">
+                        <img class="front-face" src="img/lampadas.svg" alt="Lâmpadas">
+                        <img class="back-face" src="img/logo.svg" alt="Logo">
+                      </div>
+                    
+                      <div class="memory-card" data-object="lampadas">
+                        <img class="front-face" src="img/lampadas.svg" alt="Lâmpadas">
+                        <img class="back-face" src="img/logo.svg" alt="Logo">
+                      </div>
+                    
+                      <div class="memory-card" data-object="oleo">
+                        <img class="front-face" src="img/oleo.svg" alt="Óleo">
+                        <img class="back-face" src="img/logo.svg" alt="Logo">
+                      </div>
+                    
+                      <div class="memory-card" data-object="oleo">
+                        <img class="front-face" src="img/oleo.svg" alt="Óleo">
+                        <img class="back-face" src="img/logo.svg" alt="Logo">
+                      </div>
+                    
+                      <div class="memory-card" data-object="organicos">
+                        <img class="front-face" src="img/organicos.svg" alt="Orgânicos">
+                        <img class="back-face" src="img/logo.svg" alt="Logo">
+                      </div>
+                    
+                      <div class="memory-card" data-object="organicos">
+                        <img class="front-face" src="img/organicos.svg" alt="Orgânicos">
+                        <img class="back-face" src="img/logo.svg" alt="Logo">
+                      </div>
+                    
+                      <div class="memory-card" data-object="papeis">
+                        <img class="front-face" src="img/papeis-papelao.svg" alt="Papel">
+                        <img class="back-face" src="img/logo.svg" alt="Logo">
+                      </div>
+                    
+                      <div class="memory-card" data-object="papeis">
+                        <img class="front-face" src="img/papeis-papelao.svg" alt="Papel">
+                        <img class="back-face" src="img/logo.svg" alt="Logo">
+                      </div>
+                </div>
+
+            </main>
+
+        <script src="memoria.js"></script>            
+
+    </div>
+
 </body>
 </html>
