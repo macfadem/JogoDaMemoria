@@ -1,4 +1,4 @@
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     #page-home {
         background-position-x: 90vw;
     }
@@ -18,11 +18,15 @@
 
     #page-home main {
         align-items: center;
+        flex-direction: column;
     }
 
     #page-search-results .cards {
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    .memory-card {
+        height: 10vh;
     
 
 }

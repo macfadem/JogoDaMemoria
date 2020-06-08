@@ -22,6 +22,7 @@ main .aside{
     background-color: white;
     padding: 5px;
     margin: 5px;
+    max-width: 300px;
 }
 
 main .aside button {
@@ -60,7 +61,7 @@ main .cards {
 .memory-card {
     height: 20vh;
     width: 14vw;
-    max-width: 188px;
+    max-width: ;
     margin: 5px;
     position: relative;
     box-shadow: 1px 1px 1px rgba(0, 0, 0,.3);
