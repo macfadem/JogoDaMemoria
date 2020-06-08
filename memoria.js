@@ -1,9 +1,10 @@
 const cards = document.querySelectorAll('.memory-card');
-const reload = document.getElementsByClassName('.button');
-
+const button = document.querySelector("button[name=button]")
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
+let moves = 0;
+let pairs = 0;
 
 
 function flipCard() {
@@ -11,6 +12,7 @@ function flipCard() {
   if (this === firstCard) return;
 
   this.classList.add('flip');
+  moves++;
 
   if (!hasFlippedCard) {
     hasFlippedCard = true;
@@ -21,6 +23,7 @@ function flipCard() {
 
   secondCard = this;
   checkForMatch();
+  button.disabled = (pairs !== 6);
 }
 
 function checkForMatch() {
@@ -32,6 +35,7 @@ function checkForMatch() {
 function disableCards() {
   firstCard.removeEventListener('click', flipCard);
   secondCard.removeEventListener('click', flipCard);
+  pairs++;
 
   resetBoard();
 }
@@ -67,7 +71,7 @@ cards.forEach(card => card.addEventListener('click', flipCard));
 
 function resetEverything() {
   lockBoard = true;
-
+  console.log(moves,pairs);
   
   cards.forEach(card => card.addEventListener('click', flipCard));
   cards.forEach(card => card.classList.remove('flip'));
@@ -75,6 +79,8 @@ function resetEverything() {
   setTimeout(() => {
     shuffle();
     resetBoard();
+    moves = 0;
+    pairs = 0;
   }, 500)
   
 
