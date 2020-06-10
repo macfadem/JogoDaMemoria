@@ -1,5 +1,5 @@
 const cards = document.querySelectorAll('.memory-card');
-const button = document.querySelector("button[name=button]")
+const button = document.querySelector(".button")
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
@@ -66,7 +66,7 @@ function shuffle() {
   
 shuffle()
 
-
+button.addEventListener('click', resetEverything)
 cards.forEach(card => card.addEventListener('click', flipCard));
 
 function resetEverything() {
