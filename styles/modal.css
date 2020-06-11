@@ -18,6 +18,10 @@
     display: none;
 }
 
+#box2.hide {
+    display: none;
+}
+
 #modal .content {
     color: white;
 

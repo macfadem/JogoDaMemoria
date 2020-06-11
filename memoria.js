@@ -85,3 +85,15 @@ function resetEverything() {
   
 
 }
+
+button.addEventListener("click", () => {
+  boxes.classList.add("hide")
+
+  setTimeout(() => {
+      boxes.classList.remove("hide")
+  }, 2000)
+})
+
+close.addEventListener("click", () => {
+  modal.classList.add("hide")
+})

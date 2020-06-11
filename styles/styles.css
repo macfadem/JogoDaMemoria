@@ -11,7 +11,7 @@ body {
 }
 main {
     display: flex;
-    margin-top: 48px;
+    margin-top: 35px;
     background-color: teal;
     perspective: 1000px;      
 }
@@ -22,7 +22,7 @@ main .aside{
     background-color: white;
     padding: 5px;
     margin: 5px;
-    max-width: 300px;
+    max-width: ;
 }
 
 main .aside button {
@@ -54,14 +54,18 @@ main .cards {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 2%;
     gap: 24px;
-    max-width: 800px;
+    width: 800px;
+    height: 600px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    
             
 }
 
 .memory-card {
-    height: 20vh;
+    height: 180px;
     width: 14vw;
-    max-width: ;
+    max-width: 180px;
     margin: 5px;
     position: relative;
     box-shadow: 1px 1px 1px rgba(0, 0, 0,.3);

@@ -17,28 +17,27 @@
     }
 
     #page-home main {
+        display: flex;
         align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    main .aside{
+        display: none;
         flex-direction: column;
+        background-color: white;
+        padding: 5px;
+        margin: 5px;
+        max-width: ;
     }
 
     #page-search-results .cards {
         grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        margin-right: 10px;
     }
 
     .memory-card {
-        height: 10vh;
-    
-
-}
-
-@media (min-width: 1440px){
-    #page-home {
-        background-position-x: 40vw;
+        height: 130px;
+        width: 100%;
     }
-}
-
-@media (max-height: 760px){
-    #page-home {
-        background-position-y: 120px;
-    }
-}
