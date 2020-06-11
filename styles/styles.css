@@ -84,6 +84,7 @@ main .cards {
     border-radius: 20px;
     background-color: white;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 .front-face {
