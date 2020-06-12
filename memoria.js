@@ -12,8 +12,7 @@ function flipCard() {
   if (this === firstCard) return;
 
   this.classList.add('flip');
-  moves++;
-
+  
   if (!hasFlippedCard) {
     hasFlippedCard = true;
     firstCard = this;
@@ -24,6 +23,9 @@ function flipCard() {
   secondCard = this;
   checkForMatch();
   button.disabled = (pairs !== 6);
+  moves++;
+  document.getElementById('score').innerHTML = moves
+
 }
 
 function checkForMatch() {
@@ -81,19 +83,16 @@ function resetEverything() {
     resetBoard();
     moves = 0;
     pairs = 0;
-  }, 500)
+    document.getElementById('score').innerHTML = moves
+  }, 300)
   
 
 }
 
-button.addEventListener("click", () => {
-  boxes.classList.add("hide")
+// button.addEventListener("click", () => {
+//   boxes.classList.add("hide")
 
-  setTimeout(() => {
-      boxes.classList.remove("hide")
-  }, 2000)
-})
-
-close.addEventListener("click", () => {
-  modal.classList.add("hide")
-})
+//   setTimeout(() => {
+//       boxes.classList.remove("hide")
+//   }, 2000)
+// })

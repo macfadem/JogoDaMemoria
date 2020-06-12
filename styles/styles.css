@@ -13,7 +13,7 @@ main {
     display: flex;
     margin-top: 35px;
     background-color: teal;
-    perspective: 1000px;      
+    perspective: 1500px;      
 }
 
 main .aside{
@@ -22,12 +22,38 @@ main .aside{
     background-color: white;
     padding: 5px;
     margin: 5px;
-    max-width: ;
+    max-width: 400px;
+}
+
+main .aside .boxes {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+
+}
+
+main .aside .button {
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 15px;
+}
+
+.boxes h4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: black;
 }
 
 main .aside button {
-    width: 100%;
-    height: 56px;
+    width: 100px;
+    height: 60px;
+
 
     background-color: var(--primary-color);
     border-radius: 8px;
@@ -38,7 +64,7 @@ main .aside button {
 
     border: 0;
 
-    margin-top: 40px;
+    margin-top: 20px;
 
     transition: background-color 400ms;
 }
