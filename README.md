@@ -1,6 +1,6 @@
 <h1 align="center">
 <br>
-  <img src="https://imgur.com/anQWIIK" alt="Jogo da Memória" width="120">
+  <img src="https://i.imgur.com/anQWIIK.png" alt="Jogo da Memória" width="120">
 <br>
 <br>
 Jogo da Memória
@@ -13,8 +13,8 @@ Jogo da Memória
 </p>
 
 <div>
-  <img src="https://imgur.com/RaFoNez" alt="demo" height="425">
-  <img src="https://imgur.com/Hs9M2Zu" alt="demo" height="425">
+  <img src="https://i.imgur.com/RaFoNez.gifv" alt="demo" height="425">
+  <img src="https://i.imgur.com/Hs9M2Zu.png" alt="demo" height="425">
 </div>
 
 <hr />
