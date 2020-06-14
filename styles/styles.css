@@ -53,10 +53,12 @@ main .aside1 h3{
 
 main .aside1 h4{
     color: black;
+    text-align: left;
 }
 
 main .aside1 .hide{
     display: none;
+    transition: transform .5s;
 }
 
 main .aside2 {

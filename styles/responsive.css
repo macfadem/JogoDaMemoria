@@ -30,7 +30,7 @@
         margin: 15px;  
     }
     
-    #page-search-results .cards {
+    .cards {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 10px;
         margin-right: 10px;

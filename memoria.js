@@ -79,6 +79,10 @@ function resetEverything() {
   
   cards.forEach(card => card.addEventListener('click', flipCard));
   cards.forEach(card => card.classList.remove('flip'));
+
+  pair.classList.add('hide');
+  pair = document.getElementById('jogo');
+  pair.classList.remove('hide');
   
   setTimeout(() => {
     shuffle();
