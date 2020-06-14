@@ -5,6 +5,7 @@ let lockBoard = false;
 let firstCard, secondCard;
 let moves = 0;
 let pairs = 0;
+let pair = document.getElementById('jogo');
 
 
 function flipCard() {
@@ -38,7 +39,8 @@ function disableCards() {
   firstCard.removeEventListener('click', flipCard);
   secondCard.removeEventListener('click', flipCard);
   pairs++;
-
+  
+  changeInfo();
   resetBoard();
 }
 
@@ -89,10 +91,9 @@ function resetEverything() {
 
 }
 
-// button.addEventListener("click", () => {
-//   boxes.classList.add("hide")
+function changeInfo() {
+  pair.classList.add('hide');
+  pair = document.getElementById(firstCard.dataset.object);
+  pair.classList.remove('hide');
 
-//   setTimeout(() => {
-//       boxes.classList.remove("hide")
-//   }, 2000)
-// })
+}
