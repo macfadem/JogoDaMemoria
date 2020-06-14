@@ -17,18 +17,19 @@
     }
 
     #page-home main {
-        display: flex;
-        align-items: center;
-        flex-direction: column-reverse;
+        grid-template-columns: 1fr;
     }
 
-    main .aside{
+    main .aside1{
         display: none;
-        flex-direction: column;
-        background-color: white;
-        padding: 5px;
-        margin: 5px;
-        max-width: ;
+    }
+
+    main .cards {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        align-content: stretch;
     }
 
     #page-search-results .cards {
@@ -41,3 +42,4 @@
         height: 130px;
         width: 100%;
     }
+    
