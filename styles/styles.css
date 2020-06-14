@@ -15,8 +15,9 @@ main {
     grid-template-rows: 3fr 1fr;
     margin-top: 35px;
     background-color: teal;
-    perspective: 1500px;   
+    perspective: 1300px;   
     border-radius: 10px;   
+    max-height: 700px;
 }
 
 main .cards {
@@ -51,7 +52,7 @@ main .aside1 h3{
     margin-top: 10px;
 }
 
-main .aside1 h4{
+main .aside1 h5{
     color: black;
     text-align: left;
 }
@@ -80,7 +81,7 @@ main .aside2 .action{
     margin: 10px;
     align-items: center;
     margin-right: 15px;
-    padding: 20px;
+    padding: 10px;
     justify-content: space-between;
 }
 

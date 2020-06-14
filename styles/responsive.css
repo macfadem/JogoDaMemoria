@@ -1,24 +1,17 @@
 @media (max-width: 900px) {
-    #page-home {
-        background-position-x: 90vw;
+
+    #page {
+        max-height: 100%;
     }
-
-    #page-home .content {
-        align-items: center;
-        text-align: center;
+    
+    body {
+        max-height: 100%;
     }
-
-    #page-home header a {
-        position: absolute;
-        bottom: 48px;
-
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
+    
     main {
         display: flex;
         flex-direction: column;
+        max-height: fit-content;
         
       }
 
@@ -30,13 +23,13 @@
         margin: 15px;  
     }
     
-    .cards {
+    main .cards {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 10px;
         margin-right: 10px;
     }
 
-    .memory-card {
+    main .memory-card {
         height: 130px;
         width: 100%;
     }
