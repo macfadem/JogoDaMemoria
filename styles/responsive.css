@@ -1,4 +1,4 @@
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     #page-home {
         background-position-x: 90vw;
     }
@@ -16,22 +16,20 @@
         transform: translateX(-50%);
     }
 
-    #page-home main {
-        grid-template-columns: 1fr;
-    }
+    main {
+        display: flex;
+        flex-direction: column;
+        
+      }
 
     main .aside1{
-        display: none;
+        display: none;        
     }
 
-    main .cards {
-        grid-row-start: 1;
-        grid-row-end: 2;
-        grid-column-start: 1;
-        grid-column-end: 1;
-        align-content: stretch;
+    main .aside2{     
+        margin: 15px;  
     }
-
+    
     #page-search-results .cards {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 10px;
@@ -42,4 +40,4 @@
         height: 130px;
         width: 100%;
     }
-    
+}

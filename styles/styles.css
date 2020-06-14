@@ -36,7 +36,8 @@ main .aside1 {
     flex-direction: column;
     background-color: white;
     padding: 5px;
-    margin: 5px;
+    margin: 15px;
+    margin-right: 0;
     border-radius: 10px;
 }
 
@@ -47,7 +48,8 @@ main .aside2 {
     flex-direction: column;
     background-color: white;
     padding: 5px;
-    margin: 5px;
+    margin: 15px;
+    margin-right: 0;
     border-radius: 10px;
 }
 
