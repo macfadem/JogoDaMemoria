@@ -12,9 +12,9 @@ Jogo da Memória
  Esse jogo da memória foi realizado em paralelo ao projeto construído na <a href="https://github.com/macfadem/NextLevelWeek">NextLevelWeek</a> para instruir a importância da coleta seletiva e o motivo do site Ecoleta existir.
 </p>
 
-<div>
-  <img src="https://i.imgur.com/RaFoNez.gif" alt="demo" height="370">
-  <img src="https://i.imgur.com/Hs9M2Zu.png" alt="demo" height="370">
+<div align="center">
+  <img src="https://i.imgur.com/RaFoNez.gif" alt="demo" height="340">
+  <img src="https://i.imgur.com/Hs9M2Zu.png" alt="demo" height="340">
 </div>
 
 <hr />
